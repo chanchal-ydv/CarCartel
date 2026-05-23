@@ -483,13 +483,13 @@ body {
 }
 
 .results-container {
-    display: flex; 
-    flex-direction: column; 
-    gap: 50px; 
-    max-width: 1750px; 
-    width: 98%; 
-    margin: 0 auto; 
-    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 95%;
+    max-width: 1750px;
+    margin: 0 auto;
+    flex-grow: 1;
 }
 
 /* =========================================
