@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCartel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content scroll-animate">
+            <h1 class="hero-title">Precision Meets Power</h1>
+            <p class="hero-subtitle">The world's most advanced AI vehicle matchmaking system.</p>
+            <a href="#configure" class="scroll-btn">Build Your Machine</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-row scroll-animate">
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Sleek sports car detail">
+            </div>
+            <div class="feature-text-card">
+                <h2>Global Market Intelligence</h2>
+                <p>Our AI doesn't just search a local database. It scans real-time global markets, analyzing specs, expert reviews, and depreciation curves to find the exact vehicle that matches your driving DNA.</p>
+            </div>
+        </div>
+        
+        <div class="feature-row reverse scroll-animate">
+            <div class="feature-image">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop" alt="Luxury car interior">
+            </div>
+            <div class="feature-text-card">
+                <h2>Zero Compromise</h2>
+                <p>From hypercars to daily drivers, define your exact budget, required engineering origin, and mileage targets. We filter the noise and deliver absolute precision.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="configure" class="configurator">
+        <div class="glass-panel scroll-animate">
+            <header class="config-header">
+                <h2>Configure Your Parameters</h2>
+                <p>Set your constraints and initiate the neural scan.</p>
+            </header>
+
+            <form id="car-form" class="search-panel">
+                <div class="form-grid">
+                    
+                    <div class="input-group full-width-mobile">
+                        <label for="budget">Max Budget</label>
+                        <div class="combined-input">
+                            <select id="currency-selector" aria-label="Select Currency"></select>
+                            <input type="number" id="budget" placeholder="e.g. 50000" min="0" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="body-type">Body Type</label>
+                        <div class="custom-combobox">
+                            <input type="text" id="body-type" class="glass-input" placeholder="e.g. SUV, Coupe..." autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="origin">Engineering Origin</label>
+                        <div class="custom-combobox">
+                            <input type="text" id="origin" class="glass-input" placeholder="e.g. German, JDM..." autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mileage">Min. Mileage (kmpl / mpg)</label>
+                        <input type="number" id="mileage" class="glass-input" placeholder="e.g. 15" min="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="color">Preferred Color</label>
+                        <div class="custom-combobox">
+                            <input type="text" id="color" class="glass-input" placeholder="Type any color or select..." autocomplete="off">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="brand">Specific Brand Focus (Optional)</label>
+                        <div class="custom-combobox">
+                            <input type="text" id="brand" class="glass-input" placeholder="e.g. Porsche, Koenigsegg..." autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="search-btn" class="glass-btn">Analyze Global Market</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="showroom" class="showroom-section" style="display: none;">
+        <div class="showroom-header scroll-animate">
+            <h2>Your Curated Matches</h2>
+            <p>Based on global market analysis</p>
+        </div>
+        
+        <div id="results-container" class="results-container"></div>
+        
+        <footer class="thrill-footer scroll-animate">
+            <h3 class="thrill-text">Crafted for the journey ahead. The road is yours.</h3>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
