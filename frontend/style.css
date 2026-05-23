@@ -641,26 +641,43 @@ body {
 }
 
 @media (max-width: 768px) {
-    .glass-panel { 
-        padding: 40px 25px; 
+
+    .glass-panel {
+        padding: 40px 25px;
     }
-    .immersive-card { 
-        min-height: auto; 
+
+    .immersive-card {
+        flex-direction: column !important;
+        min-height: auto !important;
     }
-    .gradient-overlay { 
-        background: rgba(10, 10, 12, 0.85); 
+
+    .background-slider {
+        height: 250px;
+        position: relative;
     }
-    .content-layer { 
-        width: 100%; 
-        padding: 40px 25px; 
+
+    .gradient-overlay {
+        background: linear-gradient(
+            to top,
+            rgba(0,0,0,1) 0%,
+            rgba(0,0,0,0.25) 100%
+        );
     }
-    .car-name { 
-        font-size: 2rem; 
+
+    .content-layer {
+        width: 100% !important;
+        padding: 30px 20px;
     }
-    .thrill-footer { 
-        padding: 60px 10px; 
+
+    .car-name {
+        font-size: 2rem;
     }
-    .thrill-text { 
-        font-size: 2.2rem; 
+
+    .thrill-footer {
+        padding: 60px 10px;
+    }
+
+    .thrill-text {
+        font-size: 2.2rem;
     }
 }

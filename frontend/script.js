@@ -205,14 +205,9 @@ carForm.addEventListener('submit', async (e) => {
         });
 
     } catch (error) {
-        console.error("DEBUG ERROR:", error); 
+        console.error("System Error:", error);
         showroomSection.style.display = 'block';
-        resultsContainer.innerHTML = `
-            <div style="background: #333; color: #fff; padding: 20px; border: 2px solid red;">
-                <h3>Code Crashed!</h3>
-                <p><strong>Error:</strong> ${error.message}</p>
-                <p><strong>Stack:</strong> ${error.stack}</p>
-            </div>`;
+        resultsContainer.innerHTML = `<p style="color: #ff6b6b; text-align: center; font-size: 1.2rem; margin-top: 50px;">We hit a roadblock parsing the market data. Please verify your API keys.</p>`;
     } finally {
         searchBtn.textContent = "Analyze Market";
         searchBtn.disabled = false;
