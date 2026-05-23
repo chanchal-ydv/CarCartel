@@ -1,4 +1,4 @@
-
+const API_BASE_URL = "https://carcartel-production.up.railway.app";
 const currencyDropdown = document.getElementById('currency-selector');
 const carForm = document.getElementById('car-form');
 const searchBtn = document.getElementById('search-btn');
