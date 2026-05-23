@@ -14,7 +14,7 @@ import com.autobroker.smart_auto_broker.service.ImageService;
 
 @RestController
 @RequestMapping("/api/broker")
-@CrossOrigin(origins = "https://car-cartel.vercel.app/")
+@CrossOrigin(origins = "https://car-cartel.vercel.app")
 public class SearchController {
 
     @Autowired
