@@ -136,8 +136,7 @@ carForm.addEventListener('submit', async (e) => {
         const encodedCurrency = encodeURIComponent(currency);
         const encodedPrompt = encodeURIComponent(generatedPrompt);
         
-        const response = await fetch(`http://localhost:8080/api/broker/search?currency=${encodedCurrency}&prompt=${encodedPrompt}`);
-        
+        const response = await fetch(`${API_BASE_URL}/api/broker/search?currency=${encodedCurrency}&prompt=${encodedPrompt}`);        
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         
         const rawData = await response.text();
